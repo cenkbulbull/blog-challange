@@ -1,3 +1,5 @@
+@import 'color';
+
 .card{
     display: flex;
     flex-direction: column;
@@ -28,6 +30,7 @@
         }
         &-title{
             font-weight: 600;
+            color: $titlecolor;
         }
         &-footer{
             display: flex;

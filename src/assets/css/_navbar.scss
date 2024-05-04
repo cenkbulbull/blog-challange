@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import 'color';
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -19,7 +21,7 @@
             font-size: 16px;
             &__item{
                 &__link{
-                    color: #3B3C4A;
+                    color: $listcolor;
                 }
             }
         } 
