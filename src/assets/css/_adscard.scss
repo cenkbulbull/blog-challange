@@ -1,0 +1,23 @@
+.ads{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    border-radius: 12px;
+    max-width: 750px;
+    height: 100px;
+    background-color: #E8E8EA;
+    &__info{
+        width: 177px;
+        height: 70px;
+        color: #696A75;
+        p{
+            font-weight: 400;
+        }
+        h4{
+            font-weight: 600;
+        }
+    }
+}
