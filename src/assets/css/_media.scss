@@ -31,6 +31,12 @@ $xlarge: 1632px;
         }
         
     }
+    .slider{
+        &__content{
+            width: 100%;
+            left: 0;
+        }
+    }
 }
 @media screen and (max-width: $large) {
     .container{
