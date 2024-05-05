@@ -1,0 +1,65 @@
+@import 'color';
+
+.author-info{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color:#F6F6F7;
+    padding: 48px;
+    border-radius: 12px;
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        width: 668px;
+        &-author{
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            height: 64px;
+            &__image{
+                width: 64px;
+                height: 64px;
+                border-radius: 80px;
+            }
+            &__info{
+                float: left;
+                height: 48px;
+                :nth-child(1){
+                    color: $titlecolor;
+                    font-weight: 500;
+                }
+                :nth-child(2){
+                    color: #696A75;
+                    font-weight: 400;
+                }
+            }
+        }
+        &-text{
+            display: flex;
+            text-align: center;
+            color: $listcolor;
+            line-height: 26px;
+        }
+        &-social-media{
+            display: flex;
+            gap: 8px;
+            height: 32px;
+            &__button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 14px;
+                width: 32px;
+                height: 32px;
+                padding: 8px;
+                border: 0;
+                border-radius: 6px;
+                background-color: #696A75;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+    }
+}
