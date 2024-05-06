@@ -23,6 +23,9 @@ $xlarge: 1632px;
             &-info{
                 align-items: center;
             }
+            &-link{
+                width: auto;
+            }
         }
         &__copyright{
             flex-direction: column;
