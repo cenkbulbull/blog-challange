@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card" @click="$router.push('/singlepost?id='+blog.id)">
     <img
       class="card__image"
       :src="blog.image"
