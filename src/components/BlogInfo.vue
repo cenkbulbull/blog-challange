@@ -26,6 +26,17 @@
 <script setup>
 import {defineProps} from 'vue'
 defineProps({
-  blog: Object
+  blog: {
+    type: Object,
+    required: false,
+    default: function () {
+      return { 
+        text: 'The Impact of Technology on the Workplace: How Technology is Changing', 
+        category: 'Technology',
+        author: 'Jason Francisco',
+        date: 'August 20, 2022'
+      }
+    }
+  }
 })
 </script>
