@@ -1,57 +1,57 @@
 @import 'color';
 
-.card{
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 392px;
+  height: 488px;
+  border-radius: 12px;
+  border: 1px solid #e8e8ea;
+  padding: 16px;
+  gap: 16px;
+  &__image {
+    height: 240px;
+    border-radius: 6px;
+  }
+  &__content {
     display: flex;
     flex-direction: column;
-    width: 392px;
-    height: 488px;
-    border-radius: 12px;
-    border: 1px solid #E8E8EA;
-    padding: 16px;
-    gap: 16px;
-    &__image{
-        height: 240px;
-        border-radius: 6px;
-    }
-    &__content{
-        display: flex;
-        flex-direction: column;
-        height: 200px;
-        padding: 8px;
-        gap: 20px;
-        &-category{
-            background-color: rgba(75, 107, 251, 5%);
-            color:#4B6BFB;
-            width: 127px;
-            text-align: center;
-            font-weight: 500;
-            border-radius: 6px;
-            padding: 4px 10px 4px 10px;
-        }
-        &-title{
-            font-weight: 600;
-            color: $titlecolor;
-        }
-        &-footer{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 20px;
-            color: #97989F;
-            &-author{
-                display: flex;
-                align-items: center;
-                font-weight: 500;
-                gap: 12px;
-                &-avatar{
-                    width: 36px;
-                    height: 36px;
-                    border-radius: 28px;
-                }
-            }
-            &-date{
-                font-weight: 400;
-            }
-        }
-    }
+    height: 200px;
+    padding: 8px;
+    gap: 20px;
+  }
+  &__category {
+    background-color: rgba(75, 107, 251, 5%);
+    color: #4b6bfb;
+    width: 127px;
+    text-align: center;
+    font-weight: 500;
+    border-radius: 6px;
+    padding: 4px 10px 4px 10px;
+  }
+  &__title {
+    font-weight: 600;
+    color: $titlecolor;
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    color: #97989f;
+  }
+  &__author {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    gap: 12px;
+  }
+  &__avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 28px;
+  }
+  &__date {
+    font-weight: 400;
+  }
 }

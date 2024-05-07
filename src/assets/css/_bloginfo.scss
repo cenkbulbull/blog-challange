@@ -1,48 +1,59 @@
-.blog-info{
+.blog-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 24px;
+  border-radius: 12px;
+  padding: 40px;
+  &--bg-outline {
+    background-color: transparent;
+    color: #ffffff;
+  }
+  &--bg-light {
+    background-color: #ffffff;
+    color: $titlecolor;
+  }
+  &__header {
     display: flex;
-    flex-direction:column;
-    gap: 24px;
-    border-radius: 12px;
-    &__heading{
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        opacity: 0px;
-        &__badge--primary{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 4px;
-            width: 107px;
-            height: 28px;
-            padding: 4px 10px 4px 10px;
-            border-radius: 6px;
-            opacity: 0px;
-            background: rgba(75, 107, 251, 1);
-            color: #FFFFFF;
-        }
-        &__title{
-            color: $titlecolor;
-            font-weight: 600;
-            line-height: 40px;
-        }
+    flex-direction: column;
+    gap: 16px;
+    opacity: 0px;
+  }
+  &__badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    width: 107px;
+    height: 28px;
+    padding: 4px 10px 4px 10px;
+    border-radius: 6px;
+    opacity: 0px;
+    color: #ffffff;
+    &--primary {
+      background: rgba(75, 107, 251, 1);
     }
-    &__short-info{
-        display: flex;
-        align-items: center;
-        height: 36px;
-        gap: 20px;
-        opacity: 0px;
-        color: #97989F;
-        &__author{
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            :nth-child(1){
-                width: 36px;
-                height: 36px;
-                border-radius: 28px;
-            }
-        }
+  }
+  &__title {
+    font-weight: 600;
+    line-height: 40px;
+  }
+  &__short-info {
+    display: flex;
+    align-items: center;
+    height: 36px;
+    gap: 20px;
+    opacity: 0px;
+    color: #97989f;
+  }
+  &__author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    :nth-child(1) {
+      width: 36px;
+      height: 36px;
+      border-radius: 28px;
     }
+  }
 }

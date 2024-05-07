@@ -2,7 +2,7 @@
     <div class="about">
         <AuthorInfoCard/>
         <div class="about__blogs">
-            <div class="about__blogs__heading">
+            <div class="about__heading">
                 <h3>Latest Post</h3>
             </div>
             <Blogs/>
@@ -23,12 +23,12 @@ import Blogs from '@/components/Blogs.vue';
         flex-direction: column;
         align-items: center;
         gap:32px;
-        &__heading{
-            width: 100%;
-            font-weight: 700;
-            padding-left: 14px;
-            color: #181A2A;
-        }
     }
+    &__heading{
+        width: 100%;
+        font-weight: 700;
+        padding-left: 14px;
+        color: #181A2A;
+    }    
 }
 </style>

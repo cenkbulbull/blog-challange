@@ -1,184 +1,178 @@
 @import 'color';
 
-.footer{
-    font-family: "Plus Jakarta Sans", sans-serif;
+.footer {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: #e8e8ea;
+  padding: 64px 352px 0px 352px;
+  gap: 64px;
+  border-top: 1px solid #e8e8ea;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  &__info {
     display: flex;
     flex-direction: column;
-    background-color: #E8E8EA;
-    padding: 64px 352px 0px 352px;
+    width: 289px;
+    height: 236px;
+    gap: 24px;
+  }
+  &__about {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    &-title {
+      color: $titlecolor;
+      font-weight: 600;
+    }
+    &-description {
+      font-weight: 400;
+      color: $listcolor;
+    }
+  }
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: $titlecolor;
+  }
+  &__email {
+    display: flex;
+    font-weight: 600;
+    span {
+      font-weight: 400;
+      color: $listcolor;
+    }
+  }
+  &__phone {
+    display: flex;
+    font-weight: 600;
+    span {
+      font-weight: 400;
+      color: $listcolor;
+    }
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    width: 495px;
+    height: 236px;
+    gap: 80px;
+  }
+  &__quicklink {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 90px;
+    height: 236px;
+    white-space: nowrap;
+    &-title {
+      color: $titlecolor;
+      font-weight: 600;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: $listcolor;
+  }
+  &__category {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 90px;
+    height: 236px;
+    white-space: nowrap;
+    &-title {
+      color: $titlecolor;
+      font-weight: 600;
+    }
+  }
+  &__newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #ffffff;
+    text-align: center;
+    width: 392px;
+    border-radius: 12px;
+    padding: 32px;
+    height: 254px;
+    &-heading {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      width: 289px;
+      height: 56px;
+      :nth-child(1) {
+        font-size: 20px;
+        font-weight: 600;
+        color: $titlecolor;
+      }
+      :nth-child(2) {
+        font-size: 16px;
+        font-weight: 400;
+        color: #696a75;
+      }
+    }
+    &-form {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      width: 320px;
+      height: 104px;
+      position: relative;
+      &-input {
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 400;
+        border: 1px solid #dcdddf;
+        border-radius: 6px;
+        padding: 12px 16px 12px 16px;
+        gap: 10px;
+        height: 48px;
+        outline: none;
+      }
+      &-icon {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: #696a75;
+      }
+      &-button {
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 500;
+        background-color: #4b6bfb;
+        color: #ffffff;
+        border: none;
+        border-radius: 6px;
+        padding: 12px 20px 12px 20px;
+        gap: 12px;
+        height: 48px;
+        cursor: pointer;
+      }
+    }
+  }
+  &__copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 32px 0px 32px 0px;
     gap: 64px;
-    border-top: 1px solid #E8E8EA;
-    &__content{
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-        &-info{
-            display: flex;
-            flex-direction: column;
-            width: 289px;
-            height: 236px;
-            gap: 24px;
-            &-about{
-                display: flex;
-                flex-direction: column;
-                gap: 12px;
-                &-title{
-                    color: $titlecolor;
-                    font-weight: 600;
-                }
-                &-description{
-                    font-weight: 400;
-                    color: $listcolor;
-                }
-            }
-            &-contact{
-                display: flex;
-                flex-direction: column;
-                gap: 4px;
-                color: $titlecolor;
-                &-email{
-                    display: flex;
-                    font-weight: 600;
-                    span{
-                        font-weight: 400;
-                        color: $listcolor;
-                    }
-                }
-                &-phone{
-                    display: flex;
-                    font-weight: 600;
-                    span{
-                        font-weight: 400;
-                        color: $listcolor;
-                    }
-                }
-            }
-        }
-        &-link{
-            display: flex;
-            justify-content: center;
-            width: 495px;
-            height: 236px;
-            gap: 80px;
-            &-quicklink{
-                display: flex;
-                flex-direction: column;
-                gap: 24px;
-                width: 90px;
-                height: 236px;
-                white-space: nowrap;
-                &-title{
-                    color: $titlecolor;
-                    font-weight: 600;
-                }
-                &-list{
-                    display: flex;
-                    flex-direction: column;
-                    gap: 8px;
-                    color: $listcolor;
-                }
-            }
-            &-category{
-                display: flex;
-                flex-direction: column;
-                gap: 24px;
-                width: 90px;
-                height: 236px;
-                white-space: nowrap;
-                &-title{
-                    color: $titlecolor;
-                    font-weight: 600;
-                }
-                &-list{
-                    display: flex;
-                    flex-direction: column;
-                    gap: 8px;
-                    color: $listcolor;
-                }
-            }
-        }
-        &-newsletter{
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-            font-family: "Work Sans", sans-serif;
-            background-color: #ffffff;
-            text-align: center;
-            width: 392px;
-            border-radius: 12px;
-            padding: 32px;
-            height: 254px;
-            &-heading{
-                display: flex;
-                flex-direction: column;
-                gap: 8px;
-                width: 289px;
-                height: 56px;
-                :nth-child(1){
-                    font-size: 20px;
-                    font-weight: 600;
-                    color: $titlecolor;
-                }
-                :nth-child(2){
-                    font-size: 16px;
-                    font-weight: 400;
-                    color: #696A75;
-                }
-            }
-            &-form{
-                display: flex;
-                flex-direction: column;
-                gap: 8px;
-                width: 320px;
-                height: 104px;
-                position: relative;
-                &-input{
-                    font-family: "Work Sans", sans-serif;
-                    font-weight: 400;
-                    border: 1px solid #DCDDDF;
-                    border-radius: 6px;
-                    padding: 12px 16px 12px 16px;
-                    gap: 10px;
-                    height: 48px;
-                    outline: none;
-                }
-                &-icon{
-                    position: absolute;
-                    right: 15px;
-                    top: 15px;
-                    color: #696A75;
-                }
-                &-button{
-                    font-family: "Work Sans", sans-serif;
-                    font-weight: 500;
-                    background-color: #4B6BFB;
-                    color: #ffffff;
-                    border: none;
-                    border-radius: 6px;
-                    padding: 12px 20px 12px 20px;
-                    gap: 12px;
-                    height: 48px;
-                    cursor: pointer;
-                }
-            }
-        }
+    border-top: 1px solid #dcdddf;
+    &-list {
+      display: flex;
+      gap: 16px;
+      color: $listcolor;
     }
-    &__copyright{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 20px;
-        padding: 32px 0px 32px 0px;
-        gap: 64px;
-        border-top: 1px solid #DCDDDF;
-        &-list{
-            display: flex;
-            gap: 16px;
-            color: $listcolor;
-        }
-        hr{
-            height: 25px;
-            color: #E8E8EA;
-        }
+    hr {
+      height: 25px;
+      color: #e8e8ea;
     }
+  }
 }
