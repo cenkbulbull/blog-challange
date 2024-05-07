@@ -58,6 +58,7 @@ import Breadcrumb from '@/components/Breadcrumb.vue'
   &__image {
     width: 100%;
     height: 100%;
+    border-radius: 12px;
   }
   &__info {
     position: absolute;

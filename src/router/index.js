@@ -3,6 +3,7 @@ import Home from '@/views/Home.vue'
 import About from '@/views/About.vue'
 import Post from '@/views/Post.vue'
 import BlogListing from '@/views/BlogListing.vue'
+import NotFound from '@/views/NotFound.vue'
 const routes = [
   {
     path: '/',
@@ -23,6 +24,11 @@ const routes = [
     path: '/bloglisting',
     name: 'bloglisting',
     component:BlogListing
+  },
+  { 
+    path: '/:pathMatch(.*)*', 
+    name: 'NotFound', 
+    component: NotFound 
   },
 ]
 
