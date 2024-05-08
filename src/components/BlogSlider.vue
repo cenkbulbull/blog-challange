@@ -8,6 +8,7 @@
     </swiper-container>
   </div>
 </template>
+
 <script setup>
 import BlogInfo from './BlogInfo.vue'
 import data from '@/data/fakeData.json'

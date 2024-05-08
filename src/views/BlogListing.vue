@@ -22,18 +22,22 @@
     </div>
   </div>
 </template>
+
 <script setup>
 import AdsCard from '@/components/AdsCard.vue'
 import Blogs from '@/components/Blogs.vue'
 import BlogInfo from '@/components/BlogInfo.vue'
 import Breadcrumb from '@/components/Breadcrumb.vue'
 </script>
+
 <style lang="scss">
 @import '@/assets/css/_color.scss';
+
 .bloglisting {
   display: flex;
   flex-direction: column;
   gap: 48px;
+
   &__header {
     display: flex;
     flex-direction: column;
@@ -41,12 +45,14 @@ import Breadcrumb from '@/components/Breadcrumb.vue'
     gap: 10px;
     padding: 16px 0px 16px 0px;
   }
+
   &__title {
     text-align: center;
     font-weight: 600;
     line-height: 36px;
     color: $titlecolor;
   }
+
   &__card-overlay {
     display: flex;
     flex-direction: column;
@@ -55,11 +61,13 @@ import Breadcrumb from '@/components/Breadcrumb.vue'
     height: 450px;
     border-radius: 12px;
   }
+
   &__image {
     width: 100%;
     height: 100%;
     border-radius: 12px;
   }
+
   &__info {
     position: absolute;
     bottom: 0px;
@@ -67,12 +75,14 @@ import Breadcrumb from '@/components/Breadcrumb.vue'
     width: 70%;
     color: #ffffff;
   }
+
   &__post-layout {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 32px;
   }
+
   &__button {
     font-family: 'Work Sans', sans-serif;
     font-size: 15px;
@@ -85,13 +95,16 @@ import Breadcrumb from '@/components/Breadcrumb.vue'
     border-radius: 6px;
     border: 1px solid rgba(105, 106, 117, 0.3);
     cursor: pointer;
+
     &--secondary {
       color: #696a75;
     }
+
     &--outline {
       background-color: transparent;
       color: #696a75;
     }
+
     &:hover {
       background-color: rgba(105, 106, 117, 0.3);
       border: 1px solid #ffffff;

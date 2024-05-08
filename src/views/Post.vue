@@ -124,24 +124,29 @@ import { useRoute } from 'vue-router'
 
 const route = useRoute()
 const blog = data.blogs.find((item) => item.id == route.query.id)
+
 </script>
 <style lang="scss">
 @import '@/assets/css/_color.scss';
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
 .post {
   width: 800px;
   margin: 20px auto;
+
   &__article {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 32px;
   }
+
   &__image {
     width: 100%;
     height: 462px;
     border-radius: 12px;
   }
+
   &__quote {
     display: flex;
     gap: 32px;
@@ -156,6 +161,7 @@ const blog = data.blogs.find((item) => item.id == route.query.id)
     line-height: 32px;
     font-style: italic;
   }
+
   &__content {
     display: flex;
     flex-direction: column;
@@ -168,16 +174,19 @@ const blog = data.blogs.find((item) => item.id == route.query.id)
     line-height: 28px;
     color: $listcolor;
   }
+
   &__title {
     font-weight: 600;
     line-height: 32px;
     color: $titlecolor;
   }
+
   &__conclusion {
     display: flex;
     flex-direction: column;
     margin: 48px 0;
   }
+  
   &__content {
     display: flex;
     flex-direction: column;

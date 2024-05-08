@@ -1,25 +1,28 @@
 @import 'mixin';
 
-.ads{
-    @include flex-aicenter;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    gap: 10px;
-    border-radius: 12px;
-    width: 100%;
-    max-width: 750px;
-    height: 100px;
-    background-color: #E8E8EA;
-    &__info{
-        width: 177px;
-        height: 70px;
-        color: #696A75;
-        p{
-            font-weight: 400;
-        }
-        h4{
-            font-weight: 600;
-        }
+.ads {
+  @include flex-aicenter;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 750px;
+  height: 100px;
+  background-color: #e8e8ea;
+
+  &__info {
+    width: 177px;
+    height: 70px;
+    color: #696a75;
+
+    p {
+      font-weight: 400;
     }
+
+    h4 {
+      font-weight: 600;
+    }
+  }
 }

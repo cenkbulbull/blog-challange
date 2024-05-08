@@ -9,21 +9,25 @@
         </div>
     </div>
 </template>
+
 <script setup>
 import AuthorInfoCard from '@/components/AuthorInfoCard.vue';
 import Blogs from '@/components/Blogs.vue';
 </script>
+
 <style lang="scss">
 .about{
     display: flex;
     flex-direction: column;
     gap:48px;
+
     &__blogs{
         display: flex;
         flex-direction: column;
         align-items: center;
         gap:32px;
     }
+    
     &__heading{
         width: 100%;
         font-weight: 700;

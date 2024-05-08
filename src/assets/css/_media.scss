@@ -7,9 +7,11 @@ $xlarge: 1632px;
 @media screen and (max-width: $medium) {
   .navbar {
     @include flex-column-aicenter;
+
     &__nav {
       @include flex-column-aicenter;
     }
+
     &__list {
       font-size: 12px;
       gap: 18px;
@@ -21,12 +23,15 @@ $xlarge: 1632px;
       @include flex-column-aicenter;
       text-align: center;
     }
+
     &__info {
       align-items: center;
     }
+
     &__link {
       width: auto;
     }
+
     &__copyright {
       @include flex-column-aicenter;
       font-size: 13px;
@@ -55,6 +60,7 @@ $xlarge: 1632px;
     &__mobile-button {
       display: none;
     }
+
     &__nav-mobile {
       display: none;
     }
@@ -64,6 +70,7 @@ $xlarge: 1632px;
   .container {
     padding: 32px 20px;
   }
+
   .footer {
     padding: 64px 20px 0px 20px;
   }
@@ -72,6 +79,7 @@ $xlarge: 1632px;
   .container {
     padding: 32px 200px;
   }
+  
   .footer {
     padding: 64px 200px 0px 200px;
   }

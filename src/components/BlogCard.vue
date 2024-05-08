@@ -16,9 +16,12 @@
     </div>
   </div>
 </template>
+
 <script setup>
 import { defineProps } from 'vue'
+
 defineProps({
   blog: Object,
 })
+
 </script>

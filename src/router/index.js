@@ -4,6 +4,7 @@ import About from '@/views/About.vue'
 import Post from '@/views/Post.vue'
 import BlogListing from '@/views/BlogListing.vue'
 import NotFound from '@/views/NotFound.vue'
+
 const routes = [
   {
     path: '/',

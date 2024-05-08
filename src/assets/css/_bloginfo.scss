@@ -7,19 +7,23 @@
   gap: 24px;
   border-radius: 12px;
   padding: 40px;
+
   &--bg-outline {
     background-color: transparent;
     color: #ffffff;
   }
+
   &--bg-light {
     background-color: #ffffff;
     color: $titlecolor;
   }
+
   &__header {
     display: flex;
     flex-direction: column;
     gap: 16px;
   }
+
   &__badge {
     @include flex-aicenter;
     justify-content: center;
@@ -29,23 +33,28 @@
     padding: 4px 10px 4px 10px;
     border-radius: 6px;
     color: #ffffff;
+
     &--primary {
       background: rgba(75, 107, 251, 1);
     }
   }
+
   &__title {
     font-weight: 600;
     line-height: 40px;
   }
+
   &__short-info {
     @include flex-aicenter;
     height: 36px;
     gap: 20px;
     color: #97989f;
   }
+
   &__author {
     @include flex-aicenter;
     gap: 12px;
+
     :nth-child(1) {
       width: 36px;
       height: 36px;

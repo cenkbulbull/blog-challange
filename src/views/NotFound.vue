@@ -6,23 +6,28 @@
     </div>
   </div>
 </template>
+
 <style lang="scss">
 @import '@/assets/css/_color.scss';
+
 .error {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   height: 50vh;
+
   &__content {
     display: flex;
     flex-direction: column;
     gap: 22px;
+
     h1 {
       padding-right: 12px;
       color: $titlecolor;
     }
   }
+  
   &__button{
     font-family: 'Work Sans', sans-serif;
     font-size: 15px;

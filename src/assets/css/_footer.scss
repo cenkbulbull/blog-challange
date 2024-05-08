@@ -8,20 +8,24 @@
   padding: 64px 352px 0px 352px;
   gap: 64px;
   border-top: 1px solid #e8e8ea;
+
   &__content {
     display: flex;
     justify-content: space-between;
     gap: 20px;
   }
+
   &__info {
     @include flex-column;
     width: 289px;
     height: 236px;
     gap: 24px;
   }
+
   &__about {
     @include flex-column;
     gap: 12px;
+
     &-title {
       color: $titlecolor;
       font-weight: 600;
@@ -31,11 +35,13 @@
       color: $listcolor;
     }
   }
+
   &__contact {
     @include flex-column;
     gap: 4px;
     color: $titlecolor;
   }
+
   &__email {
     display: flex;
     font-weight: 600;
@@ -44,14 +50,17 @@
       color: $listcolor;
     }
   }
+
   &__phone {
     display: flex;
     font-weight: 600;
+
     span {
       font-weight: 400;
       color: $listcolor;
     }
   }
+
   &__link {
     display: flex;
     justify-content: center;
@@ -59,33 +68,39 @@
     height: 236px;
     gap: 80px;
   }
+
   &__quicklink {
     @include flex-column;
     gap: 24px;
     width: 90px;
     height: 236px;
     white-space: nowrap;
+
     &-title {
       color: $titlecolor;
       font-weight: 600;
     }
   }
+
   &__list {
     @include flex-column;
     gap: 8px;
     color: $listcolor;
   }
+
   &__category {
     @include flex-column;
     gap: 24px;
     width: 90px;
     height: 236px;
     white-space: nowrap;
+
     &-title {
       color: $titlecolor;
       font-weight: 600;
     }
   }
+
   &__newsletter {
     @include flex-column;
     gap: 30px;
@@ -96,28 +111,33 @@
     border-radius: 12px;
     padding: 32px;
     height: 254px;
+
     &-heading {
       @include flex-column;
       gap: 8px;
       width: 289px;
       height: 56px;
+
       :nth-child(1) {
         font-size: 20px;
         font-weight: 600;
         color: $titlecolor;
       }
+
       :nth-child(2) {
         font-size: 16px;
         font-weight: 400;
         color: #696a75;
       }
     }
+
     &-form {
       @include flex-column;
       gap: 8px;
       width: 320px;
       height: 104px;
       position: relative;
+
       &-input {
         font-family: 'Work Sans', sans-serif;
         font-weight: 400;
@@ -128,12 +148,14 @@
         height: 48px;
         outline: none;
       }
+
       &-icon {
         position: absolute;
         right: 15px;
         top: 15px;
         color: #696a75;
       }
+
       &-button {
         font-family: 'Work Sans', sans-serif;
         font-weight: 500;
@@ -148,6 +170,7 @@
       }
     }
   }
+
   &__copyright {
     display: flex;
     justify-content: space-between;
@@ -156,11 +179,13 @@
     padding: 32px 0px 32px 0px;
     gap: 64px;
     border-top: 1px solid #dcdddf;
+
     &-list {
       display: flex;
       gap: 16px;
       color: $listcolor;
     }
+    
     hr {
       height: 25px;
       color: #e8e8ea;

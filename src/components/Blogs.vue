@@ -5,6 +5,7 @@
     </div>
   </div>
 </template>
+
 <script setup>
 import BlogCard from './BlogCard.vue'
 import data from '@/data/fakeData.json'
