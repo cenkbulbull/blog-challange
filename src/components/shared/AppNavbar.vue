@@ -33,5 +33,23 @@
         </div>
       </div>
     </div>
+    <button class="navbar__mobile-button" @click="mobilemenu = !mobilemenu">
+        <i class="fa-solid fa-bars navbar__menu-icon"></i>
+    </button>
+    <div class="navbar__nav-mobile" v-if="mobilemenu">
+      <router-link class="navbar__link" to="/">Home</router-link>
+      <router-link class="navbar__link" to="/bloglisting">Blog</router-link>
+      <router-link class="navbar__link" to="/singlepost?id=1"
+        >Single Post</router-link
+      >
+      <router-link class="navbar__link" to="/about">Pages</router-link>
+      <router-link class="navbar__link" to="/contact">Contact</router-link>
+    </div>
   </div>
 </template>
+<script setup>
+import { ref } from 'vue'
+
+const mobilemenu = ref(false)
+
+</script>
