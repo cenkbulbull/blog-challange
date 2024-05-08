@@ -1,9 +1,9 @@
 @import 'color';
+@import 'mixin';
 
 .footer {
   font-family: 'Plus Jakarta Sans', sans-serif;
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   background-color: #e8e8ea;
   padding: 64px 352px 0px 352px;
   gap: 64px;
@@ -14,15 +14,13 @@
     gap: 20px;
   }
   &__info {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     width: 289px;
     height: 236px;
     gap: 24px;
   }
   &__about {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     gap: 12px;
     &-title {
       color: $titlecolor;
@@ -34,8 +32,7 @@
     }
   }
   &__contact {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     gap: 4px;
     color: $titlecolor;
   }
@@ -63,8 +60,7 @@
     gap: 80px;
   }
   &__quicklink {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     gap: 24px;
     width: 90px;
     height: 236px;
@@ -75,14 +71,12 @@
     }
   }
   &__list {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     gap: 8px;
     color: $listcolor;
   }
   &__category {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     gap: 24px;
     width: 90px;
     height: 236px;
@@ -93,8 +87,7 @@
     }
   }
   &__newsletter {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     gap: 30px;
     font-family: 'Work Sans', sans-serif;
     background-color: #ffffff;
@@ -104,8 +97,7 @@
     padding: 32px;
     height: 254px;
     &-heading {
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
       gap: 8px;
       width: 289px;
       height: 56px;
@@ -121,8 +113,7 @@
       }
     }
     &-form {
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
       gap: 8px;
       width: 320px;
       height: 104px;

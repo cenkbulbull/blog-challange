@@ -2,13 +2,13 @@ $medium: 980px;
 $large: 1360px;
 $xlarge: 1632px;
 
+@import 'mixin';
+
 @media screen and (max-width: $medium) {
   .navbar {
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-aicenter;
     &__nav {
-      flex-direction: column;
-      align-items: center;
+      @include flex-column-aicenter;
     }
     &__list {
       font-size: 12px;
@@ -18,8 +18,7 @@ $xlarge: 1632px;
   }
   .footer {
     &__content {
-      flex-direction: column;
-      align-items: center;
+      @include flex-column-aicenter;
       text-align: center;
     }
     &__info {
@@ -29,8 +28,7 @@ $xlarge: 1632px;
       width: auto;
     }
     &__copyright {
-      flex-direction: column;
-      align-items: center;
+      @include flex-column-aicenter;
       font-size: 13px;
     }
   }
@@ -53,11 +51,11 @@ $xlarge: 1632px;
   }
 }
 @media screen and (min-width: $medium) {
-  .navbar{
-    &__mobile-button{
+  .navbar {
+    &__mobile-button {
       display: none;
     }
-    &__nav-mobile{
+    &__nav-mobile {
       display: none;
     }
   }
@@ -69,7 +67,6 @@ $xlarge: 1632px;
   .footer {
     padding: 64px 20px 0px 20px;
   }
-  
 }
 @media screen and (min-width: $large) and (max-width: $xlarge) {
   .container {

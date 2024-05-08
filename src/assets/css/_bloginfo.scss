@@ -1,3 +1,5 @@
+@import 'mixin';
+
 .blog-info {
   display: flex;
   flex-direction: column;
@@ -20,9 +22,8 @@
     opacity: 0px;
   }
   &__badge {
-    display: flex;
+    @include flex-aicenter;
     justify-content: center;
-    align-items: center;
     gap: 4px;
     width: 107px;
     height: 28px;
@@ -39,16 +40,14 @@
     line-height: 40px;
   }
   &__short-info {
-    display: flex;
-    align-items: center;
+    @include flex-aicenter;
     height: 36px;
     gap: 20px;
     opacity: 0px;
     color: #97989f;
   }
   &__author {
-    display: flex;
-    align-items: center;
+    @include flex-aicenter;
     gap: 12px;
     :nth-child(1) {
       width: 36px;

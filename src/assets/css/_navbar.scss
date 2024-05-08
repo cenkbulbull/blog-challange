@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import 'color';
+@import 'mixin';
 
 .navbar {
   display: flex;
@@ -22,8 +23,7 @@
     cursor: pointer;
   }
   &__nav-mobile{
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     gap: 10px;
     background-color: #181A2A;
     right: 0;
@@ -45,9 +45,8 @@
     color: $listcolor;
   }
   &__options {
-    display: flex;
+    @include flex-aicenter;
     flex-wrap: nowrap;
-    align-items: center;
   }
   &__search-input {
     font-family: 'Inter', sans-serif;
@@ -76,8 +75,7 @@
     margin-left: 5px;
   }
   &__switch-button {
-    display: flex;
-    align-items: center;
+    @include flex-aicenter;
     justify-content: center;
     gap: 10px;
     background-color: #ffffff;
