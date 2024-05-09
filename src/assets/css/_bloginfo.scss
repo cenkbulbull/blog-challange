@@ -4,9 +4,7 @@
   display: flex;
   flex-direction: column;
   justify-content: start;
-  gap: 24px;
-  border-radius: 12px;
-  padding: 40px;
+  gap: 20px;
 
   &--bg-outline {
     background-color: transparent;
@@ -33,6 +31,9 @@
     padding: 4px 10px 4px 10px;
     border-radius: 6px;
     color: #ffffff;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
 
     &--primary {
       background: rgba(75, 107, 251, 1);
@@ -40,6 +41,7 @@
   }
 
   &__title {
+    font-size: 36px;
     font-weight: 600;
     line-height: 40px;
   }
@@ -47,18 +49,30 @@
   &__short-info {
     @include flex-aicenter;
     height: 36px;
-    gap: 20px;
-    color: #97989f;
+    gap: 24px;
+    color: #696a75;
   }
 
   &__author {
     @include flex-aicenter;
-    gap: 12px;
+    gap: 8px;
 
     :nth-child(1) {
       width: 36px;
       height: 36px;
       border-radius: 28px;
     }
+
+    :nth-child(2) {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+    }
+  }
+
+  &__date {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
   }
 }

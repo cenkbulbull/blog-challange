@@ -1,6 +1,6 @@
 $medium: 980px;
 $large: 1360px;
-$xlarge: 1632px;
+$xlarge: 1800px;
 
 @import 'mixin';
 
@@ -16,6 +16,10 @@ $xlarge: 1632px;
       font-size: 12px;
       gap: 18px;
       display: none;
+    }
+
+    &__options{
+      gap: 0
     }
   }
   .footer {
@@ -38,7 +42,7 @@ $xlarge: 1632px;
     }
   }
   .slider {
-    &__info {
+    &__content {
       width: 100%;
       left: 0;
     }
@@ -51,7 +55,7 @@ $xlarge: 1632px;
       width: 90%;
       font-size: 12px;
       bottom: 30px;
-      left: 20px;
+      left: -10px;
     }
   }
 }
@@ -71,19 +75,33 @@ $xlarge: 1632px;
     padding: 32px 20px;
   }
 
+  .navbar{
+    gap: 0;
+    &__list{
+      gap: 20px;
+    }
+  }
+  
   .footer {
     padding: 64px 20px 0px 20px;
   }
 }
+
 @media screen and (min-width: $large) and (max-width: $xlarge) {
   .container {
     padding: 32px 200px;
   }
-  
+  .navbar{
+    gap: 0;
+    &__list{
+      gap: 20px;
+    }
+  }
   .footer {
     padding: 64px 200px 0px 200px;
   }
 }
+
 @media screen and (min-width: $xlarge) {
   .container {
     padding: 32px 350px;
