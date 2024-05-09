@@ -1,3 +1,5 @@
+@import 'color';
+
 .breadcrumb {
   &__list {
     display: flex;
@@ -5,16 +7,17 @@
   }
 
   &__link {
+    font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    color: #696a75;
+    color: #696A75;
+    &:not(:first-child){
+      border-left: 1px solid #E8E8EA;
+      padding-left: 10px;
+    }
 
     &--active {
-      color: #3b3c4a;
+      color: $listcolor;
     }
-  }
-  
-  &__divider {
-    color: #e8e8ea;
   }
 }
