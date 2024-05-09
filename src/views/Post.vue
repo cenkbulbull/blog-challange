@@ -1,7 +1,9 @@
 <template>
   <div class="post">
     <div class="post__article">
-      <BlogInfo :blog="blog" />
+      <div class="post__info">
+        <BlogInfo :blog="blog" />
+      </div>
       <img class="post__image" :src="blog.image" />
       <div class="post__content">
         <p class="post__text">
@@ -58,7 +60,9 @@
         class="post__image"
         src="https://s3-alpha-sig.figma.com/img/8b79/ec93/4ffe2414f1f3b6c944cef034a92ef7f5?Expires=1716163200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jXEPuW8b50-yxXMQ4ORhLPMXtZL0IExfIZ0LfNfikHoZGnZen5GSwhV8Al5PRT5Wyf8lqEgcL7WmIf3DiZotqvkjdkHcqXrqx~141jQmVYHNUdGlK54gVBaFMkoV9pH0NhvRKaEtFK1KUIXKPTasZhGBMskvZGaVfWJkF1kNTTOp5iRckwIGygslFyVIpYGa8G5qRaukDNuW8PiVGZFDpqBqj8R6r1YF9WuH25gM0NxPdHQWJpUcNxeKHTMwMKky5pAQdz5NPFiv3-9lRJUoTNfoq2IaUkQBrzUGLxrhxSm9b7erx282eCaAs3nBb0GQRYb1~npPDMBc3WUMNQaXgw__"
       />
-      <AdsCard />
+      <div class="post__ads">
+        <AdsCard />
+      </div>
       <div class="post__content">
         <h3 class="post__title">Pack Lightly and Smartly</h3>
         <p class="post__text">
@@ -131,6 +135,10 @@ const blog = data.blogs.find((item) => item.id == route.query.id)
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
 
 .post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
   width: 800px;
   margin: 20px auto;
 
@@ -162,6 +170,12 @@ const blog = data.blogs.find((item) => item.id == route.query.id)
     font-style: italic;
   }
 
+  &__ads{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
@@ -170,14 +184,16 @@ const blog = data.blogs.find((item) => item.id == route.query.id)
 
   &__text {
     font-family: 'Source Serif 4', serif;
+    font-size: 20px;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 32px;
     color: $listcolor;
   }
 
   &__title {
+    font-size: 24px;
     font-weight: 600;
-    line-height: 32px;
+    line-height: 28px;
     color: $titlecolor;
   }
 

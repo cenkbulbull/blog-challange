@@ -22,10 +22,12 @@
         </li>
       </ul>
       <div class="navbar__options">
-        <input class="navbar__search-input" type="text" placeholder="Search" />
-        <button class="navbar__search-button">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
+        <div class="navbar__search">
+          <input class="navbar__search-input" type="text" placeholder="Search" />
+          <button class="navbar__search-button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
         <div class="navbar__switch">
           <button class="navbar__switch-button">
             <i class="fa-solid fa-sun"></i>
@@ -33,6 +35,7 @@
         </div>
       </div>
     </div>
+    
     <button class="navbar__mobile-button" @click="mobilemenu = !mobilemenu">
         <i class="fa-solid fa-bars navbar__menu-icon"></i>
     </button>

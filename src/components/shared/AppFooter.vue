@@ -50,7 +50,7 @@
             type="text"
             placeholder="Your Email"
           />
-          <i class="fa-regular fa-envelope footer_newsletter-form-icon"></i>
+          <i class="fa-regular fa-envelope footer__newsletter-form-icon"></i>
           <button class="footer__newsletter-form-button">Subscribe</button>
         </div>
       </div>
@@ -59,9 +59,7 @@
       <img class="footer__logo" src="@/assets/images/footerlogo.png" />
       <ul class="footer__copyright-list">
         <li>Terms of Use</li>
-        <hr />
         <li>Privacy Policy</li>
-        <hr />
         <li>Cookie Policy</li>
       </ul>
     </div>

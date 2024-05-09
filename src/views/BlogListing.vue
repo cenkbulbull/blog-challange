@@ -10,7 +10,9 @@
         class="bloglisting__image"
         src="https://s3-alpha-sig.figma.com/img/eb4f/aad2/4394e91108e011b0d07581596959713b?Expires=1716163200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PLP8EXKklWboWrlMNHrHuWVLSfDX8P9YpJtsZOmUbjrTtKu4FlTITN8VaoUL7ftwPZTY8Wim2Hu4Aaj8AaN77i34OYeEpL1jY~lATWC8dAzn9pZFIYUY0QoVvxZ3q-4AP8eLIyTRuloAETJLEZcLSxKolWrmpUmGEmOzn-xhnAJiee51Qcg7nhpmAgPOnwyCTJ-vcnMQWBFJFF6OhJkz74Kt-nmzMMcXMiTNix~dGWBv6g3L-Xo5DmBDqezxz4WknSj1y6RksrsyvL8ENMnA9EUDjU8L8AI0esMXVvjGlMDcJ1E7WAIX316h2zqvmcXW~E1GztJGWT5-YzMCRMJvCQ__"
       />
-      <BlogInfo class="bloglisting__info" color="'blog-info--bg-outline'" />
+      <div class="bloglisting__info">
+        <BlogInfo color="'blog-info--bg-outline'" />
+      </div>
     </div>
 
     <div class="bloglisting__post-layout">
@@ -18,7 +20,9 @@
       <button class="bloglisting__button bloglisting__button--outline">
         Load More
       </button>
-      <AdsCard />
+      <div class="bloglisting__ads">
+        <AdsCard />
+      </div>
     </div>
   </div>
 </template>
@@ -73,6 +77,7 @@ import Breadcrumb from '@/components/Breadcrumb.vue'
     bottom: 0px;
     z-index: 100;
     width: 70%;
+    margin: 40px 40px;
     color: #ffffff;
   }
 
@@ -111,6 +116,12 @@ import Breadcrumb from '@/components/Breadcrumb.vue'
       color: #ffffff;
       transition: all 0.2s;
     }
+  }
+
+  &__ads{
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 }
 </style>

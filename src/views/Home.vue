@@ -2,7 +2,9 @@
   <div class="home">
     <BlogSlider />
     <div class="home__content">
-      <AdsCard />
+      <div class="home__ads">
+        <AdsCard />
+      </div>
       <div class="home__blogs">
         <div class="home__heading">
           <h3>Latest Post</h3>
@@ -16,6 +18,8 @@
           View All Post
         </button>
       </div>
+    </div>
+    <div class="home__ads">
       <AdsCard />
     </div>
   </div>
@@ -38,6 +42,12 @@ import BlogSlider from '../components/BlogSlider'
     flex-direction: column;
     align-items: center;
     gap: 32px;
+  }
+
+  &__ads{
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 
   &__blogs {
