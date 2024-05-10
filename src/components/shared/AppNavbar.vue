@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar">
+  <nav class="navbar">
     <div class="navbar__content">
       <img class="navbar__logo" src="../../assets/images/logo.png" />
       <div class="navbar__nav">
@@ -58,7 +58,7 @@
         <router-link class="navbar__link" to="/contact">Contact</router-link>
       </div>
     </div>
-  </div>
+  </nav>
 </template>
 <script setup>
 import { ref } from 'vue'

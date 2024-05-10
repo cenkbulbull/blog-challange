@@ -1,5 +1,5 @@
 <template>
-  <div class="footer">
+  <footer class="footer">
     <div class="footer__content">
       <div class="footer__info">
         <div class="footer__about">
@@ -63,5 +63,5 @@
         <li>Cookie Policy</li>
       </ul>
     </div>
-  </div>
+  </footer>
 </template>
