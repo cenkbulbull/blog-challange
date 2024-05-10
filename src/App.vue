@@ -1,6 +1,6 @@
 <template>
+  <AppNavbar />
   <div class="container">
-    <AppNavbar />
     <router-view />
   </div>
   <AppFooter />

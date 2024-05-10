@@ -4,10 +4,16 @@
 
 .navbar {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 118px;
+  gap: 10px;
+  padding: 32px 350px;
+  font-family: "Work Sans", sans-serif;
+  &__content {
+    @include flex-aicenter;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 118px;
+  }
 
   &__logo {
     width: 158px;
@@ -15,29 +21,28 @@
   }
 
   &__nav {
-    display: flex;
-    align-items: center;
+    @include flex-aicenter;
     gap: 21px;
   }
 
-  &__mobile-button{
+  &__mobile-button {
     background-color: transparent;
     margin-top: 10px;
     border: 0;
     cursor: pointer;
   }
 
-  &__nav-mobile{
+  &__nav-mobile {
     @include flex-column;
     gap: 10px;
-    background-color: #181A2A;
+    background-color: #181a2a;
     right: 0;
     width: 100%;
     margin-top: 10px;
     padding: 10px;
     border-radius: 10px;
 
-    a{
+    a {
       color: #ffffff !important;
     }
   }
@@ -59,7 +64,7 @@
     gap: 40px;
   }
 
-  &__search{
+  &__search {
     display: flex;
     gap: 12px;
     border-radius: 5px;
@@ -94,7 +99,7 @@
     border-radius: 100px;
     margin-left: 5px;
   }
-  
+
   &__switch-button {
     @include flex-aicenter;
     justify-content: center;

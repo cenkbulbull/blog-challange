@@ -55,8 +55,7 @@
   }
 
   &__author {
-    display: flex;
-    align-items: center;
+    @include flex-aicenter;
     gap: 12px;
   }
 
@@ -74,11 +73,10 @@
   }
 
   &__date {
-    display: flex;
+    @include flex-aicenter;
     font-size: 16px;
     font-weight: 400;
     color: #97989F;
-    align-items: center;
   }
 
 }

@@ -1,15 +1,18 @@
-$medium: 980px;
+$medium: 993px;
 $large: 1360px;
-$xlarge: 1800px;
+$xlarge: 1922px;
 
 @import 'mixin';
 
 @media screen and (max-width: $medium) {
-  .navbar {
-    @include flex-column-aicenter;
 
-    &__nav {
+  .navbar{
+    @include flex-column-aicenter;
+    padding: 32px 20px;
+
+    &__content{
       @include flex-column-aicenter;
+      gap: 10px;
     }
 
     &__list {
@@ -22,6 +25,7 @@ $xlarge: 1800px;
       gap: 0
     }
   }
+
   .footer {
     &__content {
       @include flex-column-aicenter;
@@ -59,6 +63,7 @@ $xlarge: 1800px;
     }
   }
 }
+
 @media screen and (min-width: $medium) {
   .navbar {
     &__mobile-button {
@@ -70,15 +75,21 @@ $xlarge: 1800px;
     }
   }
 }
+
 @media screen and (max-width: $large) {
   .container {
     padding: 32px 20px;
   }
 
   .navbar{
-    gap: 0;
+    padding: 32px 20px;
+
+    &__content{
+      gap: 10px;
+    }
+
     &__list{
-      gap: 20px;
+      gap: 20px
     }
   }
   
@@ -91,19 +102,22 @@ $xlarge: 1800px;
   .container {
     padding: 32px 200px;
   }
+
   .navbar{
-    gap: 0;
-    &__list{
-      gap: 20px;
+    padding: 32px 200px;
+
+    &__content{
+      gap: 10px;
     }
   }
+
   .footer {
     padding: 64px 200px 0px 200px;
   }
 }
 
 @media screen and (min-width: $xlarge) {
-  .container {
+  .container{
     padding: 32px 350px;
   }
 }
