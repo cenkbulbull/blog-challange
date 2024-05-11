@@ -198,7 +198,7 @@
       display: flex;
       gap: 16px;
       color: $listcolor;
-      li{
+      li {
         font-size: 16px;
         font-weight: 400;
         line-height: 24px;
@@ -206,6 +206,35 @@
         &:not(:first-child) {
           border-left: 1px solid #c5c5c7;
         }
+      }
+    }
+  }
+
+  &__logo {
+    display: flex;
+    gap: 10px;
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      color: #141624;
+
+      &-brand {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px;
+
+        &--bold {
+          font-weight: 800;
+        }
+      }
+
+      &-claim {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color: $listcolor;
       }
     }
   }
