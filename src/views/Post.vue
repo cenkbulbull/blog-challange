@@ -6,7 +6,7 @@
       </div>
       <img class="post__image" :src="blog.image" />
       <div class="post__content">
-        <p class="post__text">
+        <p class="post__content-text">
           Traveling is an enriching experience that opens up new horizons,
           exposes us to different cultures, and creates memories that last a
           lifetime. However, traveling can also be stressful and overwhelming,
@@ -21,8 +21,8 @@
         </p>
       </div>
       <div class="post__content">
-        <h3 class="post__title">Research Your Destination</h3>
-        <p class="post__text">
+        <h3 class="post__content-title">Research Your Destination</h3>
+        <p class="post__content-text">
           Before embarking on your journey, take the time to research your
           destination. This includes understanding the local culture, customs,
           and laws, as well as identifying top attractions, restaurants, and
@@ -36,8 +36,8 @@
         </p>
       </div>
       <div class="post__content">
-        <h3 class="post__title">Plan Your Itinerary</h3>
-        <p class="post__text">
+        <h3 class="post__content-title">Plan Your Itinerary</h3>
+        <p class="post__content-text">
           While it's essential to leave room for spontaneity and unexpected
           adventures, having a rough itinerary can help you make the most of
           your time and budget. Identify the must-see sights and experiences and
@@ -64,8 +64,8 @@
         <AdsCard />
       </div>
       <div class="post__content">
-        <h3 class="post__title">Pack Lightly and Smartly</h3>
-        <p class="post__text">
+        <h3 class="post__content-title">Pack Lightly and Smartly</h3>
+        <p class="post__content-text">
           Packing can be a daunting task, but with some careful planning and
           smart choices, you can pack light and efficiently. Start by making a
           packing list and sticking to it, focusing on versatile and comfortable
@@ -74,8 +74,8 @@
         </p>
       </div>
       <div class="post__content">
-        <h3 class="post__title">Stay Safe and Healthy</h3>
-        <p class="post__text">
+        <h3 class="post__content-title">Stay Safe and Healthy</h3>
+        <p class="post__content-text">
           Traveling can expose you to new environments and potential health
           risks, so it's crucial to take precautions to stay safe and healthy.
           This includes researching any required vaccinations or medications,
@@ -85,8 +85,10 @@
         </p>
       </div>
       <div class="post__content">
-        <h3 class="post__title">Immerse Yourself in the Local Culture</h3>
-        <p class="post__text">
+        <h3 class="post__content-title">
+          Immerse Yourself in the Local Culture
+        </h3>
+        <p class="post__content-text">
           One of the most rewarding aspects of traveling is immersing yourself
           in the local culture and customs. This includes trying local cuisine,
           attending cultural events and festivals, and interacting with locals.
@@ -95,8 +97,8 @@
         </p>
       </div>
       <div class="post__content">
-        <h3 class="post__title">Capture Memories</h3>
-        <p class="post__text">
+        <h3 class="post__content-title">Capture Memories</h3>
+        <p class="post__content-text">
           Finally, don't forget to capture memories of your journey. Whether
           it's through photographs, journaling, or souvenirs, preserving the
           moments and experiences of your travels can bring joy and nostalgia
@@ -108,8 +110,8 @@
     </div>
     <div class="post__conclusion">
       <div class="post__content">
-        <h3 class="post__title">Conclusion:</h3>
-        <p class="post__text">
+        <h3 class="post__content-title">Conclusion:</h3>
+        <p class="post__content-text">
           Traveling is an art form that requires a blend of planning,
           preparation, and spontaneity. By following these tips and tricks, you
           can make the most of your journey and create memories that last a
@@ -119,7 +121,7 @@
       </div>
     </div>
   </div>
-  <BackToTop/>
+  <BackToTop />
 </template>
 <script setup>
 import AdsCard from '@/components/AdsCard.vue'
@@ -130,7 +132,6 @@ import { useRoute } from 'vue-router'
 
 const route = useRoute()
 const blog = data.blogs.find((item) => item.id == route.query.id)
-
 </script>
 <style lang="scss">
 @import '@/assets/css/_color.scss';
@@ -172,7 +173,7 @@ const blog = data.blogs.find((item) => item.id == route.query.id)
     font-style: italic;
   }
 
-  &__ads{
+  &__ads {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -181,34 +182,28 @@ const blog = data.blogs.find((item) => item.id == route.query.id)
   &__content {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-  }
+    gap: 16px;
 
-  &__text {
-    font-family: 'Source Serif 4', serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 32px;
-    color: $listcolor;
-  }
+    &-text {
+      font-family: 'Source Serif 4', serif;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 32px;
+      color: $listcolor;
+    }
 
-  &__title {
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 28px;
-    color: $titlecolor;
+    &-title {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 28px;
+      color: $titlecolor;
+    }
   }
 
   &__conclusion {
     display: flex;
     flex-direction: column;
     margin: 48px 0;
-  }
-  
-  &__content {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
   }
 }
 </style>

@@ -2,23 +2,23 @@
   <footer class="footer">
     <div class="footer__content">
       <div class="footer__info">
-        <div class="footer__about">
-          <h4 class="footer__about-title">About</h4>
-          <p class="footer__about-description">
+        <div class="footer__info-about">
+          <h4 class="footer__info-about-title">About</h4>
+          <p class="footer__info-about-description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam
           </p>
         </div>
-        <div class="footer__contact">
-          <p class="footer__email">Email: <span>info@jstemplate.net</span></p>
-          <p class="footer__phone">Phone: <span>880 123 456 789</span></p>
+        <div class="footer__info-contact">
+          <p class="footer__info-contact-email">Email: <span>info@jstemplate.net</span></p>
+          <p class="footer__info-contact-phone">Phone: <span>880 123 456 789</span></p>
         </div>
       </div>
       <div class="footer__link">
-        <div class="footer__quicklink">
-          <h4 class="footer__quicklink-title">Quick Link</h4>
-          <ul class="footer__list">
+        <div class="footer__link-quicklink">
+          <h4 class="footer__link-quicklink-title">Quick Link</h4>
+          <ul class="footer__link-quicklink-list">
             <li>Home</li>
             <li>About</li>
             <li>Blog</li>
@@ -27,9 +27,9 @@
             <li>Contact</li>
           </ul>
         </div>
-        <div class="footer__category">
-          <h4 class="footer__category-title">Category</h4>
-          <ul class="footer__list">
+        <div class="footer__link-category">
+          <h4 class="footer__link-category-title">Category</h4>
+          <ul class="footer__link-category-list">
             <li>Lifestyle</li>
             <li>Technology</li>
             <li>Travel</li>

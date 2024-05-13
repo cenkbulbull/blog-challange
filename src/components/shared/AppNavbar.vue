@@ -34,42 +34,42 @@
       </div>
 
       <div class="navbar__nav">
-        <ul class="navbar__list">
-          <li class="navbar__item">
-            <router-link class="navbar__link" to="/">Home</router-link>
+        <ul class="navbar__menu">
+          <li class="navbar__menu-item">
+            <router-link class="navbar__menu-link" to="/">Home</router-link>
           </li>
-          <li class="navbar__item">
-            <router-link class="navbar__link" to="/bloglisting"
+          <li class="navbar__menu-item">
+            <router-link class="navbar__menu-link" to="/bloglisting"
               >Blog</router-link
             >
           </li>
-          <li class="navbar__item">
-            <router-link class="navbar__link" to="/singlepost?id=1"
+          <li class="navbar__menu-item">
+            <router-link class="navbar__menu-link" to="/singlepost?id=1"
               >Single Post</router-link
             >
           </li>
-          <li class="navbar__item">
-            <router-link class="navbar__link" to="/about">Pages</router-link>
+          <li class="navbar__menu-item">
+            <router-link class="navbar__menu-link" to="/about">Pages</router-link>
           </li>
-          <li class="navbar__item">
-            <router-link class="navbar__link" to="/contact"
+          <li class="navbar__menu-item">
+            <router-link class="navbar__menu-link" to="/contact"
               >Contact</router-link
             >
           </li>
         </ul>
-        <div class="navbar__options">
-          <div class="navbar__search">
+        <div class="navbar__right-side">
+          <div class="navbar__right-side-search">
             <input
-              class="navbar__search-input"
+              class="navbar__right-side-search-input"
               type="text"
               placeholder="Search"
             />
-            <button class="navbar__search-button">
+            <button class="navbar__right-side-search-button">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </div>
-          <div class="navbar__switch">
-            <button class="navbar__switch-button">
+          <div class="navbar__right-side-switch">
+            <button class="navbar__right-side-switch-button">
               <i class="fa-solid fa-sun"></i>
             </button>
           </div>
@@ -80,13 +80,13 @@
         <i class="fa-solid fa-bars navbar__menu-icon"></i>
       </button>
       <div class="navbar__nav-mobile" v-if="mobilemenu">
-        <router-link class="navbar__link" to="/">Home</router-link>
-        <router-link class="navbar__link" to="/bloglisting">Blog</router-link>
-        <router-link class="navbar__link" to="/singlepost?id=1"
+        <router-link class="navbar__nav-mobile-link" to="/">Home</router-link>
+        <router-link class="navbar__nav-mobile-link" to="/bloglisting">Blog</router-link>
+        <router-link class="navbar__nav-mobile-link" to="/singlepost?id=1"
           >Single Post</router-link
         >
-        <router-link class="navbar__link" to="/about">Pages</router-link>
-        <router-link class="navbar__link" to="/contact">Contact</router-link>
+        <router-link class="navbar__nav-mobile-link" to="/about">Pages</router-link>
+        <router-link class="navbar__nav-mobile-link" to="/contact">Contact</router-link>
       </div>
     </div>
   </nav>

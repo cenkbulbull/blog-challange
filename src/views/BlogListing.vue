@@ -1,31 +1,33 @@
 <template>
   <div class="bloglisting">
     <div class="bloglisting__header">
-      <h2 class="bloglisting__title">Page Title</h2>
+      <h2 class="bloglisting__header-title">Page Title</h2>
       <Breadcrumb />
     </div>
 
     <div class="bloglisting__card-overlay">
       <img
-        class="bloglisting__image"
+        class="bloglisting__card-overlay-image"
         src="https://s3-alpha-sig.figma.com/img/eb4f/aad2/4394e91108e011b0d07581596959713b?Expires=1716163200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PLP8EXKklWboWrlMNHrHuWVLSfDX8P9YpJtsZOmUbjrTtKu4FlTITN8VaoUL7ftwPZTY8Wim2Hu4Aaj8AaN77i34OYeEpL1jY~lATWC8dAzn9pZFIYUY0QoVvxZ3q-4AP8eLIyTRuloAETJLEZcLSxKolWrmpUmGEmOzn-xhnAJiee51Qcg7nhpmAgPOnwyCTJ-vcnMQWBFJFF6OhJkz74Kt-nmzMMcXMiTNix~dGWBv6g3L-Xo5DmBDqezxz4WknSj1y6RksrsyvL8ENMnA9EUDjU8L8AI0esMXVvjGlMDcJ1E7WAIX316h2zqvmcXW~E1GztJGWT5-YzMCRMJvCQ__"
       />
-      <div class="bloglisting__info">
+      <div class="bloglisting__card-overlay-info">
         <BlogInfo color="'blog-info--bg-outline'" />
       </div>
     </div>
 
     <div class="bloglisting__post-layout">
       <Blogs />
-      <button class="bloglisting__button bloglisting__button--outline">
+      <button
+        class="bloglisting__post-layout-button bloglisting__post-layout-button--outline"
+      >
         Load More
       </button>
-      <div class="bloglisting__ads">
+      <div class="bloglisting__post-layout-ads">
         <AdsCard />
       </div>
     </div>
   </div>
-  <BackToTop/>
+  <BackToTop />
 </template>
 
 <script setup>
@@ -50,13 +52,13 @@ import BackToTop from '../components/BackToTop'
     align-items: center;
     gap: 10px;
     padding: 16px 0px 16px 0px;
-  }
 
-  &__title {
-    text-align: center;
-    font-weight: 600;
-    line-height: 36px;
-    color: $titlecolor;
+    &-title {
+      text-align: center;
+      font-weight: 600;
+      line-height: 36px;
+      color: $titlecolor;
+    }
   }
 
   &__card-overlay {
@@ -66,21 +68,21 @@ import BackToTop from '../components/BackToTop'
     position: relative;
     height: 450px;
     border-radius: 12px;
-  }
 
-  &__image {
-    width: 100%;
-    height: 100%;
-    border-radius: 12px;
-  }
+    &-image {
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+    }
 
-  &__info {
-    position: absolute;
-    bottom: 0px;
-    z-index: 100;
-    width: 70%;
-    margin: 40px 40px;
-    color: #ffffff;
+    &-info {
+      position: absolute;
+      bottom: 0px;
+      z-index: 100;
+      width: 70%;
+      margin: 40px 40px;
+      color: #ffffff;
+    }
   }
 
   &__post-layout {
@@ -88,42 +90,42 @@ import BackToTop from '../components/BackToTop'
     flex-direction: column;
     align-items: center;
     gap: 32px;
-  }
 
-  &__button {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 24px;
-    word-break: break-word;
-    width: 142px;
-    height: 48px;
-    padding: 12px 20px 12px 20px;
-    border-radius: 6px;
-    border: 1px solid rgba(105, 106, 117, 0.3);
-    cursor: pointer;
+    &-button {
+      font-family: 'Work Sans', sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 24px;
+      word-break: break-word;
+      width: 142px;
+      height: 48px;
+      padding: 12px 20px 12px 20px;
+      border-radius: 6px;
+      border: 1px solid rgba(105, 106, 117, 0.3);
+      cursor: pointer;
 
-    &--secondary {
-      color: #696a75;
+      &--secondary {
+        color: #696a75;
+      }
+
+      &--outline {
+        background-color: transparent;
+        color: #696a75;
+      }
+
+      &:hover {
+        background-color: rgba(105, 106, 117, 0.3);
+        border: 1px solid #ffffff;
+        color: #ffffff;
+        transition: all 0.2s;
+      }
     }
 
-    &--outline {
-      background-color: transparent;
-      color: #696a75;
+    &-ads {
+      display: flex;
+      justify-content: center;
+      width: 100%;
     }
-
-    &:hover {
-      background-color: rgba(105, 106, 117, 0.3);
-      border: 1px solid #ffffff;
-      color: #ffffff;
-      transition: all 0.2s;
-    }
-  }
-
-  &__ads{
-    display: flex;
-    justify-content: center;
-    width: 100%;
   }
 }
 </style>

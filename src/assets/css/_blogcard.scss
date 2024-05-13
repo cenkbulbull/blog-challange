@@ -26,57 +26,56 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
-  }
 
-  &__category {
-    display: flex;
-    gap: 4px;
-    background-color: rgba(75, 107, 251, 5%);
-    color: #4b6bfb;
-    width: 97px;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
-    border-radius: 6px;
-    padding: 4px 10px 4px 10px;
-  }
+    &-category {
+      display: flex;
+      gap: 4px;
+      background-color: rgba(75, 107, 251, 5%);
+      color: #4b6bfb;
+      width: 97px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      border-radius: 6px;
+      padding: 4px 10px 4px 10px;
+    }
 
-  &__title {
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 28px;
-    color: $titlecolor;
+    &-title {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 28px;
+      color: $titlecolor;
+    }
   }
 
   &__info{
     display: flex;
     gap:20px;
-  }
 
-  &__author {
-    @include flex-aicenter;
-    gap: 12px;
-  }
+    &-author {
+      @include flex-aicenter;
+      gap: 12px;
 
-  &__avatar {
-    width: 36px;
-    height: 36px;
-    border-radius: 1000px;
-  }
+      &-avatar {
+        width: 36px;
+        height: 36px;
+        border-radius: 1000px;
+      }
+    
+      &-name{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        color: #97989F;
+      }
+    }
 
-  &__author-name{
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    color: #97989F;
+    &-date{
+      @include flex-aicenter;
+      font-size: 16px;
+      font-weight: 400;
+      color: #97989F;
+    }
   }
-
-  &__date {
-    @include flex-aicenter;
-    font-size: 16px;
-    font-weight: 400;
-    color: #97989F;
-  }
-
 }

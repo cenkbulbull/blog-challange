@@ -4,20 +4,20 @@
   &__list {
     display: flex;
     gap: 12px;
-  }
 
-  &__link {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    color: #696A75;
-    &:not(:first-child){
-      border-left: 1px solid #E8E8EA;
-      padding-left: 10px;
-    }
+    &-item {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #696a75;
+      &:not(:first-child) {
+        border-left: 1px solid #e8e8ea;
+        padding-left: 10px;
+      }
 
-    &--active {
-      color: $listcolor;
+      &--active {
+        color: $listcolor;
+      }
     }
   }
 }

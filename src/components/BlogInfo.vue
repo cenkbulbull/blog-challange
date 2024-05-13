@@ -1,19 +1,19 @@
 <template>
   <div class="blog-info" :class="color">
     <div class="blog-info__header">
-      <div class="blog-info__badge blog-info__badge--primary">
+      <div class="blog-info__header-badge blog-info__header-badge--primary">
         {{ blog.category }}
       </div>
-      <h1 class="blog-info__title">
+      <h1 class="blog-info__header-title">
         {{ blog.text }}
       </h1>
     </div>
     <div class="blog-info__short-info">
-      <div class="blog-info__author">
+      <div class="blog-info__short-info-author">
         <img :src="blog.authorImage" />
         <p>{{ blog.author }}</p>
       </div>
-      <div class="blog-info__date">
+      <div class="blog-info__short-info-date">
         <p>{{ blog.date }}</p>
       </div>
     </div>

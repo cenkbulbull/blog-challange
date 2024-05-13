@@ -15,13 +15,13 @@ $xlarge: 1922px;
       gap: 10px;
     }
 
-    &__list {
+    &__menu {
       font-size: 12px;
       gap: 18px;
       display: none;
     }
 
-    &__options{
+    &__right-side{
       gap: 0
     }
   }
@@ -45,21 +45,26 @@ $xlarge: 1922px;
       font-size: 13px;
     }
   }
+
   .slider {
     &__content {
       width: 100%;
       left: 0;
     }
   }
+
   .post {
     width: 100%;
   }
+
   .bloglisting {
-    &__info {
-      width: 90%;
-      font-size: 12px;
-      bottom: 30px;
-      left: -10px;
+    &__card-overlay{
+      &-info {
+        width: 90%;
+        font-size: 12px;
+        bottom: 30px;
+        left: -10px;
+      }
     }
   }
 }
@@ -88,7 +93,7 @@ $xlarge: 1922px;
       gap: 10px;
     }
 
-    &__list{
+    &__menu{
       gap: 20px
     }
   }
@@ -110,7 +115,7 @@ $xlarge: 1922px;
       gap: 10px;
     }
 
-    &__list{
+    &__menu{
       gap: 25px
     }
   }

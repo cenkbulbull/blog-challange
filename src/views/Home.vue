@@ -6,14 +6,14 @@
         <AdsCard />
       </div>
       <div class="home__blogs">
-        <div class="home__heading">
+        <div class="home__blogs-heading">
           <h3>Latest Post</h3>
         </div>
-        <div class="home__layout">
+        <div class="home__blogs-layout">
           <Blogs />
         </div>
         <button
-          class="home__button home__button--outline"
+          class="home__blogs-view-button home__blogs-view-button--outline"
         >
           View All Post
         </button>
@@ -23,7 +23,7 @@
       <AdsCard />
     </div>
   </div>
-  <BackToTop/>
+  <BackToTop />
 </template>
 
 <script setup>
@@ -46,7 +46,7 @@ import BackToTop from '../components/BackToTop'
     gap: 32px;
   }
 
-  &__ads{
+  &__ads {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -57,42 +57,42 @@ import BackToTop from '../components/BackToTop'
     flex-direction: column;
     align-items: center;
     gap: 32px;
-  }
 
-  &__heading {
-    width: 100%;
-    font-weight: 700;
-    padding-left: 14px;
-    color: #181a2a;
-  }
-
-  &__button {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 24px;
-    word-break: break-word;
-    width: 142px;
-    height: 48px;
-    padding: 12px 20px 12px 20px;
-    border-radius: 6px;
-    border: 1px solid rgba(105, 106, 117, 0.3);
-    cursor: pointer;
-
-    &--secondary {
-      color: #696a75;
+    &-heading {
+      width: 100%;
+      font-weight: 700;
+      padding-left: 14px;
+      color: #181a2a;
     }
 
-    &--outline {
-      background-color: transparent;
-      color: #696A75;
-    }
-    
-    &:hover {
-      background-color: rgba(105, 106, 117, 0.3);
-      border: 1px solid #ffffff;
-      color: #ffffff;
-      transition: all 0.2s;
+    &-view-button {
+      font-family: 'Work Sans', sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 24px;
+      word-break: break-word;
+      width: 142px;
+      height: 48px;
+      padding: 12px 20px 12px 20px;
+      border-radius: 6px;
+      border: 1px solid rgba(105, 106, 117, 0.3);
+      cursor: pointer;
+
+      &--secondary {
+        color: #696a75;
+      }
+
+      &--outline {
+        background-color: transparent;
+        color: #696a75;
+      }
+
+      &:hover {
+        background-color: rgba(105, 106, 117, 0.3);
+        border: 1px solid #ffffff;
+        color: #ffffff;
+        transition: all 0.2s;
+      }
     }
   }
 }

@@ -20,51 +20,51 @@
     width: 289px;
     height: 236px;
     gap: 24px;
-  }
 
-  &__about {
-    @include flex-column;
-    gap: 12px;
+    &-about {
+      @include flex-column;
+      gap: 12px;
+  
+      &-title {
+        color: $titlecolor;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+      }
+      &-description {
+        color: $listcolor;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
 
-    &-title {
+    &-contact {
+      @include flex-column;
+      gap: 4px;
       color: $titlecolor;
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 28px;
-    }
-    &-description {
-      color: $listcolor;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 24px;
-    }
-  }
 
-  &__contact {
-    @include flex-column;
-    gap: 4px;
-    color: $titlecolor;
-  }
-
-  &__email {
-    display: flex;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    span {
-      font-weight: 400;
-      color: $listcolor;
-    }
-  }
-
-  &__phone {
-    display: flex;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    span {
-      font-weight: 400;
-      color: $listcolor;
+      &-email {
+        display: flex;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        span {
+          font-weight: 400;
+          color: $listcolor;
+        }
+      }
+    
+      &-phone {
+        display: flex;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        span {
+          font-weight: 400;
+          color: $listcolor;
+        }
+      }
     }
   }
 
@@ -74,43 +74,51 @@
     width: 495px;
     height: 236px;
     gap: 80px;
-  }
 
-  &__quicklink {
-    @include flex-column;
-    gap: 24px;
-    width: 90px;
-    height: 236px;
-    white-space: nowrap;
+    &-quicklink {
+      @include flex-column;
+      gap: 24px;
+      width: 90px;
+      height: 236px;
+      white-space: nowrap;
+  
+      &-title {
+        color: $titlecolor;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+      }
 
-    &-title {
-      color: $titlecolor;
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 28px;
+      &-list {
+        @include flex-column;
+        gap: 8px;
+        color: $listcolor;
+        font-size: 16px;
+        line-height: 24px;
+      }
     }
-  }
 
-  &__list {
-    @include flex-column;
-    gap: 8px;
-    color: $listcolor;
-    font-size: 16px;
-    line-height: 24px;
-  }
+    &-category {
+      @include flex-column;
+      gap: 24px;
+      width: 90px;
+      height: 236px;
+      white-space: nowrap;
+  
+      &-title {
+        color: $titlecolor;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+      }
 
-  &__category {
-    @include flex-column;
-    gap: 24px;
-    width: 90px;
-    height: 236px;
-    white-space: nowrap;
-
-    &-title {
-      color: $titlecolor;
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 28px;
+      &-list {
+        @include flex-column;
+        gap: 8px;
+        color: $listcolor;
+        font-size: 16px;
+        line-height: 24px;
+      }
     }
   }
 
