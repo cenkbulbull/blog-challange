@@ -12,11 +12,13 @@
             </div>
         </div>
     </div>
+    <BackToTop/>
 </template>
 
 <script setup>
 import AuthorInfoCard from '@/components/AuthorInfoCard.vue';
 import Blogs from '@/components/Blogs.vue';
+import BackToTop from '../components/BackToTop'
 </script>
 
 <style lang="scss">

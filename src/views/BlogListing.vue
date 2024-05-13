@@ -25,6 +25,7 @@
       </div>
     </div>
   </div>
+  <BackToTop/>
 </template>
 
 <script setup>
@@ -32,6 +33,7 @@ import AdsCard from '@/components/AdsCard.vue'
 import Blogs from '@/components/Blogs.vue'
 import BlogInfo from '@/components/BlogInfo.vue'
 import Breadcrumb from '@/components/Breadcrumb.vue'
+import BackToTop from '../components/BackToTop'
 </script>
 
 <style lang="scss">

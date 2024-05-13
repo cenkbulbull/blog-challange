@@ -119,10 +119,12 @@
       </div>
     </div>
   </div>
+  <BackToTop/>
 </template>
 <script setup>
 import AdsCard from '@/components/AdsCard.vue'
 import BlogInfo from '@/components/BlogInfo.vue'
+import BackToTop from '../components/BackToTop'
 import data from '@/data/fakeData.json'
 import { useRoute } from 'vue-router'
 

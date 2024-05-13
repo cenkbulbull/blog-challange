@@ -23,12 +23,14 @@
       <AdsCard />
     </div>
   </div>
+  <BackToTop/>
 </template>
 
 <script setup>
 import Blogs from '../components/Blogs'
 import AdsCard from '../components/AdsCard'
 import BlogSlider from '../components/BlogSlider'
+import BackToTop from '../components/BackToTop'
 </script>
 
 <style lang="scss">
