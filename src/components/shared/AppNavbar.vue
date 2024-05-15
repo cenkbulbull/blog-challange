@@ -68,9 +68,12 @@
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </div>
-          <div class="navbar__right-side-switch">
-            <button class="navbar__right-side-switch-button">
+          <div @click="darkmode = !darkmode" class="navbar__right-side-switch">
+            <button v-if="!darkmode" class="navbar__right-side-switch-button navbar__right-side-switch-button--light">
               <i class="fa-solid fa-sun"></i>
+            </button>
+            <button v-else class="navbar__right-side-switch-button navbar__right-side-switch-button--dark">
+              <i class="fa-solid fa-moon"></i>
             </button>
           </div>
         </div>
@@ -95,4 +98,5 @@
 import { ref } from 'vue'
 
 const mobilemenu = ref(false)
+const darkmode = ref(false)
 </script>

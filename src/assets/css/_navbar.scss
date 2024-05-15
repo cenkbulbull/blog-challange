@@ -125,6 +125,10 @@
         border: 0;
         border-radius: 100px;
         cursor: pointer;
+
+        &--dark{
+          margin: 2px 21px;
+        }
       }
     }
   }
