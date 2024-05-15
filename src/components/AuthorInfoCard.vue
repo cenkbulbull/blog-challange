@@ -2,7 +2,7 @@
     <div class="author">
         <div class="author__content">
             <div class="author__header">
-                <img class="author__header-image" src="https://s3-alpha-sig.figma.com/img/f952/fa47/9a54dc57c3bfdd71f8ab78628ef9ac9a?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=esrie9sNAWLFPQ9thxqVSbIW07YaOGEiBJneAnJpaHzRkJNYUpADar-N3XpdPWp4lxYsHnYlRyQjNBQcBhKX3AX9u~9~3Bma5X9ok6Qtpvt~OEGt-XH4KBo4MOHSjyXhBI3OAesEWXxOzIDOclyqtRCf9u3lwOlHmaiJFq5Of3uphAdcIr1iTBotInX87UTb6pmqH-hkGu8M9-~zOUWBeNmp9Vuw78wPK5dImjtMJ~AKlrAtZd3KiG7LrpvC0JSP40WK8xAJz6Td5q3aBjbbJ3VFgY4dKEx0pvT11GyYYmYMeFuKx803uPKC6euJLF2wbzLgPqhMH4Jvyq0ffz1Heg__">
+                <img class="author__header-image" src="https://s3-alpha-sig.figma.com/img/db37/dd67/9040be5d5b5b374674cba3ba9bae96c7?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=W3sm3Q5F81aaOCK5w3Om6zqCTI5MtMEci0A3OAEVW0OoMStOBqtMMMnBE~fu~NinUgANAJzjfDNzF~36xcmA1CbtaOv~~NsGh~ZuOvlFtyY5l7ngpVo482QqBsWZ02PsetIO5lhF9bf6kObRhasJvEKPUkokf1p5ohiOaIHEoirHFE1c2B-AQULqIdPcT1lnXq2N41nETE8YS4v5C-pp603t0V1kMLhqJdjm2IhVsvCIyfldV4UH8wJaez-Wx6-y2Jic6862a6DKbGumuknOqrqHrP6p7GTR1gFXc6ujDyack9KuiVrf994cCxYFHn4pU0M9UTHU6-3s8D1zoyHJVA__">
                 <div class="author__header-info">
                     <p>Jonathan Doe</p>
                     <p>Collaborator & Editor</p>
