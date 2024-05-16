@@ -5,24 +5,25 @@ $xlarge: 1922px;
 @import 'mixin';
 
 @media screen and (max-width: $medium) {
-
-  .navbar{
+  .navbar {
     @include flex-column-aicenter;
     padding: 32px 20px;
 
-    &__content{
+    &__content {
       @include flex-column-aicenter;
       gap: 10px;
-    }
 
-    &__menu {
-      font-size: 12px;
-      gap: 18px;
-      display: none;
-    }
+      &-nav {
+        &-menu {
+          font-size: 12px;
+          gap: 18px;
+          display: none;
+        }
 
-    &__right-side{
-      gap: 0
+        &-right-side {
+          gap: 0;
+        }
+      }
     }
   }
 
@@ -30,14 +31,14 @@ $xlarge: 1922px;
     &__content {
       @include flex-column-aicenter;
       text-align: center;
-    }
 
-    &__info {
-      align-items: center;
-    }
+      &-info {
+        align-items: center;
+      }
 
-    &__link {
-      width: auto;
+      &-link {
+        width: auto;
+      }
     }
 
     &__copyright {
@@ -58,7 +59,7 @@ $xlarge: 1922px;
   }
 
   .bloglisting {
-    &__card-overlay{
+    &__card-overlay {
       &-info {
         width: 90%;
         font-size: 12px;
@@ -71,12 +72,14 @@ $xlarge: 1922px;
 
 @media screen and (min-width: $medium) {
   .navbar {
-    &__mobile-button {
-      display: none;
-    }
+    &__content {
+      &-mobile-button {
+        display: none;
+      }
 
-    &__nav-mobile {
-      display: none;
+      &-mobile-menu {
+        display: none;
+      }
     }
   }
 }
@@ -86,18 +89,20 @@ $xlarge: 1922px;
     padding: 32px 20px;
   }
 
-  .navbar{
+  .navbar {
     padding: 32px 20px;
 
-    &__content{
+    &__content {
       gap: 10px;
-    }
 
-    &__menu{
-      gap: 20px
+      &-nav {
+        &-menu {
+          gap: 20px;
+        }
+      }
     }
   }
-  
+
   .footer {
     padding: 64px 20px 0px 20px;
   }
@@ -108,15 +113,17 @@ $xlarge: 1922px;
     padding: 32px 200px;
   }
 
-  .navbar{
+  .navbar {
     padding: 32px 200px;
 
-    &__content{
+    &__content {
       gap: 10px;
-    }
 
-    &__menu{
-      gap: 25px
+      &-nav {
+        &-menu {
+          gap: 25px;
+        }
+      }
     }
   }
 
@@ -126,7 +133,7 @@ $xlarge: 1922px;
 }
 
 @media screen and (min-width: $xlarge) {
-  .container{
+  .container {
     padding: 32px 350px;
   }
 }

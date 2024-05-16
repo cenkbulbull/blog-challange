@@ -1,24 +1,24 @@
 <template>
   <footer class="footer">
     <div class="footer__content">
-      <div class="footer__info">
-        <div class="footer__info-about">
-          <h4 class="footer__info-about-title">About</h4>
-          <p class="footer__info-about-description">
+      <div class="footer__content-info">
+        <div class="footer__content-info-about">
+          <h4 class="footer__content-info-about-title">About</h4>
+          <p class="footer__content-info-about-description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam
           </p>
         </div>
-        <div class="footer__info-contact">
-          <p class="footer__info-contact-email">Email: <span>info@jstemplate.net</span></p>
-          <p class="footer__info-contact-phone">Phone: <span>880 123 456 789</span></p>
+        <div class="footer__content-info-contact">
+          <p class="footer__content-info-contact-email">Email: <span>info@jstemplate.net</span></p>
+          <p class="footer__content-info-contact-phone">Phone: <span>880 123 456 789</span></p>
         </div>
       </div>
-      <div class="footer__link">
-        <div class="footer__link-quicklink">
-          <h4 class="footer__link-quicklink-title">Quick Link</h4>
-          <ul class="footer__link-quicklink-list">
+      <div class="footer__content-link">
+        <div class="footer__content-link-quicklink">
+          <h4 class="footer__content-link-quicklink-title">Quick Link</h4>
+          <ul class="footer__content-link-quicklink-list">
             <li>Home</li>
             <li>About</li>
             <li>Blog</li>
@@ -27,9 +27,9 @@
             <li>Contact</li>
           </ul>
         </div>
-        <div class="footer__link-category">
-          <h4 class="footer__link-category-title">Category</h4>
-          <ul class="footer__link-category-list">
+        <div class="footer__content-link-category">
+          <h4 class="footer__content-link-category-title">Category</h4>
+          <ul class="footer__content-link-category-list">
             <li>Lifestyle</li>
             <li>Technology</li>
             <li>Travel</li>
@@ -39,25 +39,25 @@
           </ul>
         </div>
       </div>
-      <div class="footer__newsletter">
-        <div class="footer__newsletter-heading">
+      <div class="footer__content-newsletter">
+        <div class="footer__content-newsletter-heading">
           <span>Weekly Newsletter</span>
           <p>Get blog articles and offers via email</p>
         </div>
-        <div class="footer__newsletter-form">
+        <div class="footer__content-newsletter-form">
           <input
-            class="footer__newsletter-form-input"
+            class="footer__content-newsletter-form-input"
             type="text"
             placeholder="Your Email"
           />
-          <i class="fa-regular fa-envelope footer__newsletter-form-icon"></i>
-          <button class="footer__newsletter-form-button">Subscribe</button>
+          <i class="fa-regular fa-envelope footer__content-newsletter-form-icon"></i>
+          <button class="footer__content-newsletter-form-button">Subscribe</button>
         </div>
       </div>
     </div>
     <div class="footer__copyright">
-      <div class="footer__logo">
-        <div class="footer__logo-image">
+      <div class="footer__copyright-logo">
+        <div class="footer__copyright-logo-image">
           <svg
             width="48"
             height="48"
@@ -110,14 +110,14 @@
             />
           </svg>
         </div>
-        <div class="footer__logo-text">
-          <p class="footer__logo-text-brand">
+        <div class="footer__copyright-logo-text">
+          <p class="footer__copyright-logo-text-brand">
             Meta<span
-              class="footer__logo-text-brand footer__logo-text-brand--bold"
+              class="footer__copyright-logo-text-brand footer__copyright-logo-text-brand--bold"
               >Blog</span
             >
           </p>
-          <p class="footer__logo-text-claim">
+          <p class="footer__copyright-logo-text-claim">
             © <span>JS Template</span> 2023. All Rights Reserved.
           </p>
         </div>

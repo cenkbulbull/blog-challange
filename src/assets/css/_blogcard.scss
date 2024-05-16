@@ -20,62 +20,63 @@
     height: 200px;
     padding: 8px;
     gap: 20px;
-  }
 
-  &__heading{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-
-    &-category {
+    &-heading{
       display: flex;
-      gap: 4px;
-      background-color: rgba(75, 107, 251, 5%);
-      color: #4b6bfb;
-      width: 97px;
-      text-align: center;
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 20px;
-      border-radius: 6px;
-      padding: 4px 10px 4px 10px;
-    }
-
-    &-title {
-      font-size: 24px;
-      font-weight: 600;
-      line-height: 28px;
-      color: $titlecolor;
-    }
-  }
-
-  &__info{
-    display: flex;
-    gap:20px;
-
-    &-author {
-      @include flex-aicenter;
-      gap: 12px;
-
-      &-avatar {
-        width: 36px;
-        height: 36px;
-        border-radius: 1000px;
-      }
-    
-      &-name{
-        font-size: 16px;
+      flex-direction: column;
+      gap: 16px;
+  
+      &-category {
+        display: flex;
+        gap: 4px;
+        background-color: rgba(75, 107, 251, 5%);
+        color: #4b6bfb;
+        width: 97px;
+        text-align: center;
+        font-size: 14px;
         font-weight: 500;
-        line-height: 24px;
+        line-height: 20px;
+        border-radius: 6px;
+        padding: 4px 10px 4px 10px;
+      }
+  
+      &-title {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 28px;
+        color: $titlecolor;
+      }
+    }
+  
+    &-info{
+      display: flex;
+      gap:20px;
+  
+      &-author {
+        @include flex-aicenter;
+        gap: 12px;
+  
+        &-avatar {
+          width: 36px;
+          height: 36px;
+          border-radius: 1000px;
+        }
+      
+        &-name{
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          color: #97989F;
+        }
+      }
+  
+      &-date{
+        @include flex-aicenter;
+        font-size: 16px;
+        font-weight: 400;
         color: #97989F;
       }
     }
 
-    &-date{
-      @include flex-aicenter;
-      font-size: 16px;
-      font-weight: 400;
-      color: #97989F;
-    }
   }
 }

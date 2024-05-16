@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar">
     <div class="navbar__content">
-      <div class="navbar__logo">
+      <div class="navbar__content-logo">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="36"
@@ -26,70 +26,99 @@
             fill="#141624"
           />
         </svg>
-        <p class="navbar__logo-text">
-          Meta<span class="navbar__logo-text navbar__logo-text--bold"
+        <p class="navbarr__content-logo-text">
+          Meta<span
+            class="navbar__content-logo-text navbar__content-logo-text--bold"
             >Blog</span
           >
         </p>
       </div>
 
-      <div class="navbar__nav">
-        <ul class="navbar__menu">
-          <li class="navbar__menu-item">
-            <router-link class="navbar__menu-link" to="/">Home</router-link>
+      <div class="navbar__content-nav">
+        <ul class="navbar__content-nav-menu">
+          <li class="navbar__content-nav-menu-item">
+            <router-link class="navbar__content-nav-menu-link" to="/"
+              >Home</router-link
+            >
           </li>
-          <li class="navbar__menu-item">
-            <router-link class="navbar__menu-link" to="/bloglisting"
+          <li class="navbar__content-nav-menu-item">
+            <router-link class="navbar__content-nav-menu-link" to="/bloglisting"
               >Blog</router-link
             >
           </li>
-          <li class="navbar__menu-item">
-            <router-link class="navbar__menu-link" to="/singlepost?id=1"
+          <li class="navbar__content-nav-menu-item">
+            <router-link
+              class="navbar__content-nav-menu-link"
+              to="/singlepost?id=1"
               >Single Post</router-link
             >
           </li>
-          <li class="navbar__menu-item">
-            <router-link class="navbar__menu-link" to="/about">Pages</router-link>
+          <li class="navbar__content-nav-menu-item">
+            <router-link class="navbar__content-nav-menu-link" to="/about"
+              >Pages</router-link
+            >
           </li>
-          <li class="navbar__menu-item">
-            <router-link class="navbar__menu-link" to="/contact"
+          <li class="navbar__content-nav-menu-item">
+            <router-link class="navbar__content-nav-menu-link" to="/contact"
               >Contact</router-link
             >
           </li>
         </ul>
-        <div class="navbar__right-side">
-          <div class="navbar__right-side-search">
+        <div class="navbar__content-nav-right-side">
+          <div class="navbar__content-nav-right-side-search">
             <input
-              class="navbar__right-side-search-input"
+              class="navbar__content-nav-right-side-search-input"
               type="text"
               placeholder="Search"
             />
-            <button class="navbar__right-side-search-button">
+            <button class="navbar__content-nav-right-side-search-button">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </div>
-          <div @click="darkmode = !darkmode" class="navbar__right-side-switch">
-            <button v-if="!darkmode" class="navbar__right-side-switch-button navbar__right-side-switch-button--light">
+          <div
+            @click="darkmode = !darkmode"
+            class="navbar__content-nav-right-side-switch"
+          >
+            <button
+              v-if="!darkmode"
+              class="navbar__content-nav-right-side-switch-button navbar__content-nav-right-side-switch-button--light"
+            >
               <i class="fa-solid fa-sun"></i>
             </button>
-            <button v-else class="navbar__right-side-switch-button navbar__right-side-switch-button--dark">
+            <button
+              v-else
+              class="navbar__content-nav-right-side-switch-button navbar__content-nav-right-side-switch-button--dark"
+            >
               <i class="fa-solid fa-moon"></i>
             </button>
           </div>
         </div>
       </div>
 
-      <button class="navbar__mobile-button" @click="mobilemenu = !mobilemenu">
-        <i class="fa-solid fa-bars navbar__menu-icon"></i>
+      <button
+        class="navbar__content-mobile-button"
+        @click="mobilemenu = !mobilemenu"
+      >
+        <i class="fa-solid fa-bars navbar__content-mobile-button-menu-icon"></i>
       </button>
-      <div class="navbar__nav-mobile" v-if="mobilemenu">
-        <router-link class="navbar__nav-mobile-link" to="/">Home</router-link>
-        <router-link class="navbar__nav-mobile-link" to="/bloglisting">Blog</router-link>
-        <router-link class="navbar__nav-mobile-link" to="/singlepost?id=1"
+      <div class="navbar__content-mobile-menu" v-if="mobilemenu">
+        <router-link class="navbar__content-mobile-menu-link" to="/"
+          >Home</router-link
+        >
+        <router-link class="navbar__content-mobile-menu-link" to="/bloglisting"
+          >Blog</router-link
+        >
+        <router-link
+          class="navbar__content-mobile-menu-link"
+          to="/singlepost?id=1"
           >Single Post</router-link
         >
-        <router-link class="navbar__nav-mobile-link" to="/about">Pages</router-link>
-        <router-link class="navbar__nav-mobile-link" to="/contact">Contact</router-link>
+        <router-link class="navbar__content-mobile-menu-link" to="/about"
+          >Pages</router-link
+        >
+        <router-link class="navbar__content-mobile-menu-link" to="/contact"
+          >Contact</router-link
+        >
       </div>
     </div>
   </nav>
