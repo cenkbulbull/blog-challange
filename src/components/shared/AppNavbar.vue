@@ -26,7 +26,7 @@
             fill="#141624"
           />
         </svg>
-        <p class="navbarr__content-logo-text">
+        <p class="navbar__content-logo-text">
           Meta<span
             class="navbar__content-logo-text navbar__content-logo-text--bold"
             >Blog</span
