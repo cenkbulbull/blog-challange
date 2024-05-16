@@ -60,12 +60,10 @@ import BackToTop from '../components/BackToTop'
 
       &-view-button {
         font-family: 'Work Sans', sans-serif;
-        font-size: 15px;
+        font-size: 16px;
         font-weight: 500;
         line-height: 24px;
         word-break: break-word;
-        width: 142px;
-        height: 48px;
         padding: 12px 20px 12px 20px;
         border-radius: 6px;
         border: 1px solid rgba(105, 106, 117, 0.3);

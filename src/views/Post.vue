@@ -142,7 +142,7 @@ const blog = data.blogs.find((item) => item.id == route.query.id)
   flex-direction: column;
   align-items: center;
   gap: 32px;
-  width: 800px;
+  max-width: 800px;
   margin: 20px auto;
 
   &__article {

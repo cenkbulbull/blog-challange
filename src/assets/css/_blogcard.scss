@@ -7,17 +7,15 @@
   border: 1px solid #e8e8ea;
   padding: 16px;
   gap: 16px;
+  max-width: 392px;
 
   &__image {
-    width: 360px;
-    height: 240px;
+    max-height: 240px;
     border-radius: 6px;
   }
 
   &__content {
     @include flex-column;
-    width: 360px;
-    height: 200px;
     padding: 8px;
     gap: 20px;
 
