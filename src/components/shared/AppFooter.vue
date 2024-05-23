@@ -51,7 +51,7 @@
             placeholder="Your Email"
           />
           <i class="fa-regular fa-envelope footer__content-newsletter-form-icon"></i>
-          <button class="footer__content-newsletter-form-button">Subscribe</button>
+          <Button text="Subscribe" bg="primary"/>
         </div>
       </div>
     </div>

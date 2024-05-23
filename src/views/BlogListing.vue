@@ -17,11 +17,7 @@
 
     <div class="bloglisting__post-layout">
       <Blogs />
-      <button
-        class="bloglisting__post-layout-button bloglisting__post-layout-button--outline"
-      >
-        Load More
-      </button>
+      <Button text="Load More" outline="true"/>
       <div class="bloglisting__post-layout-ads">
         <AdsCard />
       </div>
@@ -90,34 +86,6 @@ import BackToTop from '../components/BackToTop'
     flex-direction: column;
     align-items: center;
     gap: 32px;
-
-    &-button {
-      font-family: 'Work Sans', sans-serif;
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 24px;
-      word-break: break-word;
-      padding: 12px 20px 12px 20px;
-      border-radius: 6px;
-      border: 1px solid rgba(105, 106, 117, 0.3);
-      cursor: pointer;
-
-      &--secondary {
-        color: #696a75;
-      }
-
-      &--outline {
-        background-color: transparent;
-        color: #696a75;
-      }
-
-      &:hover {
-        background-color: rgba(105, 106, 117, 0.3);
-        border: 1px solid #ffffff;
-        color: #ffffff;
-        transition: all 0.2s;
-      }
-    }
 
     &-ads {
       display: flex;

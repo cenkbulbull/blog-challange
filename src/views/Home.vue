@@ -12,11 +12,7 @@
         <div class="home__content-blogs-layout">
           <Blogs />
         </div>
-        <button
-          class="home__content-blogs-view-button home__content-blogs-view-button--outline"
-        >
-          View All Post
-        </button>
+        <Button text="View All Post" outline="true"/>
       </div>
     </div>
     <div class="home__ads">
@@ -56,34 +52,6 @@ import BackToTop from '../components/BackToTop'
         font-weight: 700;
         padding-left: 14px;
         color: #181a2a;
-      }
-
-      &-view-button {
-        font-family: 'Work Sans', sans-serif;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 24px;
-        word-break: break-word;
-        padding: 12px 20px 12px 20px;
-        border-radius: 6px;
-        border: 1px solid rgba(105, 106, 117, 0.3);
-        cursor: pointer;
-
-        &--secondary {
-          color: #696a75;
-        }
-
-        &--outline {
-          background-color: transparent;
-          color: #696a75;
-        }
-
-        &:hover {
-          background-color: rgba(105, 106, 117, 0.3);
-          border: 1px solid #ffffff;
-          color: #ffffff;
-          transition: all 0.2s;
-        }
       }
     }
 

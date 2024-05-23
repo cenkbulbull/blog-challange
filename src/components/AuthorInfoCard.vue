@@ -10,10 +10,10 @@
             </div>
             <p class="author__content-text">Meet Jonathan Doe, a passionate writer and blogger with a love for technology and travel. Jonathan holds a degree in Computer Science and has spent years working in the tech industry, gaining a deep understanding of the impact technology has on our lives.</p>
             <div class="author__content-social-media">
-                <button class="author__content-social-media-button author__content-social-media-button--secondary"><i class="fa-brands fa-facebook"></i></button>
-                <button class="author__content-social-media-button author__content-social-media-button--secondary"><i class="fa-brands fa-twitter"></i></button>
-                <button class="author__content-social-media-button author__content-social-media-button--secondary"><i class="fa-brands fa-instagram"></i></button>
-                <button class="author__content-social-media-button author__content-social-media-button--secondary"><i class="fa-brands fa-youtube"></i></button>
+                <Button bg="secondary" icon="fa-brands fa-facebook" padding="8px"/>
+                <Button bg="secondary" icon="fa-brands fa-twitter" padding="8px"/>
+                <Button bg="secondary" icon="fa-brands fa-instagram" padding="8px"/>
+                <Button bg="secondary" icon="fa-brands fa-youtube" padding="8px"/>
             </div>
         </div>
     </div>
